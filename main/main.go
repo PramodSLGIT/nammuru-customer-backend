@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"nammuru-backend/api"
+)
 
-func main(){
-	fmt.Println("hello nammuru")
+func main() {
+	api.NammuruApi()
 }
