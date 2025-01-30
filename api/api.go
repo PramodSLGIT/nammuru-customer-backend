@@ -28,6 +28,7 @@ func NammuruApi(){
 		c1.POST("/registration", user.Register)
 		c1.GET("/otp/:phonenumber", user.OtpGeneration)
 		c1.GET("/verify/:phonenumber/:otp", user.Login)
+		c1.POST("/profileimage", user.AddProfileImage)
 	}
 
 	router.NoRoute(func(c *gin.Context) {

@@ -12,10 +12,11 @@ const (
 )
 
 type UserModel struct {
-	Name        string `json:"name" bson:"name"`
-	Email       string `json:"email" bson:"email"`
-	PhoneNumber string `json:"phone_number" bson:"phone_number"`
-	Gender      string `json:"gender" bson:"gender"`
+	ProfileImage []byte `json:"profile_image" bson:"profile_image" binding:"-"`
+	Name         string `json:"name" bson:"name"`
+	Email        string `json:"email" bson:"email"`
+	PhoneNumber  string `json:"phone_number" bson:"phone_number"`
+	Gender       string `json:"gender" bson:"gender"`
 }
 
 type LoginUserModel struct {
